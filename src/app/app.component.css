@@ -1,0 +1,77 @@
+
+.buttonOper {
+  width: 23%;
+  margin-bottom: 2%;
+}
+.container {
+  min-height: 100%;
+  width: 100%;
+}
+
+
+.bcenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.bleft{
+  top: 50%;
+  left: 40%;
+}
+
+.bleftsec{
+  top: 40%;
+  left: 60%;
+}
+
+.bleftthird{
+  top: 33%;
+  left: 55%;
+}
+
+.btop{
+  top: 40%;
+  left: 50%;
+}
+
+.btopsec{
+  top: 60%;
+  left: 60%;
+}
+
+
+.btopthird{
+  top: 33%;
+  left: 45%;
+}
+
+.bright{
+  top: 50%;
+  left: 60%;
+}
+
+.brightsec{
+  top: 40%;
+  left: 40%;
+}
+
+.brightthird{
+  top: 68%;
+  left: 55%;
+}
+
+.bbotom{
+  top: 60%;
+  left: 50%;
+}
+
+.bbottomsec{
+  top: 60%;
+  left: 40%;
+}
+
+.bbottomthird{
+  top: 68%;
+  left: 45%;
+}

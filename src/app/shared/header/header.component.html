@@ -1,0 +1,26 @@
+<mat-toolbar>
+  <div class="container" fxLayout="row" fxLayout.xs="col" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="start stretch">
+    <div fxFlex="20%">
+      <span>MultiplyPrim</span>
+        <a href="https://api.whatsapp.com/send?text=https://github.com/rodgarda/multiplyprim">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"></button>
+          <mat-icon>share</mat-icon>
+        </a>
+    </div>
+    <div fxFlex="20%">
+      Time Level {{totalTime}}
+    </div>
+    <div fxFlex="20%">
+      <span> Time Operacion {{resultTime}}</span>
+    </div>
+    <div fxFlex="20%">
+      <span> Correct {{ this._result.rightAnswers}}</span>
+    </div>
+    <div fxFlex="20%">
+      <span > Wrong {{ this._result.wrongAnswers}}</span>
+    </div>
+  </div>
+
+</mat-toolbar>
+
+
