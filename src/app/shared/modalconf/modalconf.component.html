@@ -1,31 +1,30 @@
 <div *ngIf="type=='conf'">
-<label id="example-radio-group-label">"Select Level</label>
-<mat-radio-group #radioGroup="matRadioGroup"
-  aria-labelledby="example-radio-group-label"
-  class="example-radio-group"
-  [(ngModel)]="level">
-
-  <mat-radio-button value="1">Easy</mat-radio-button>
-  <mat-radio-button value="2">Medium</mat-radio-button>
-  <mat-radio-button value="3">Hard</mat-radio-button>
-  <br/>
-  <br/>
-  <button mat-raised-button  (click)="getLevel()">Start</button>
-</mat-radio-group>
+  <label id="example-radio-group-label">Select Level</label>
+  <mat-radio-group #radioGroup="matRadioGroup"
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group"
+    [(ngModel)]="level">
+    <mat-radio-button value="1">Easy</mat-radio-button>
+    <mat-radio-button value="2">Medium</mat-radio-button>
+    <mat-radio-button value="3">Hard</mat-radio-button>
+    <br/>
+    <br/>
+    <button mat-raised-button  (click)="getLevel()">Start</button>
+  </mat-radio-group>
 </div>
 <div *ngIf="type=='result'" [style.background-color]="data.color">
-  <p>
-    Level {{data.level}}
+    <h2>Level {{data.level}}</h2>
+    Right Answers: {{data.right}}
     <br/>
-    Right Answers{{data.right}}
+    Wrong Answers: {{data.wrong}}
     <br/>
-    Wrong Answers{{data.wrong}}
+    Result: {{data.result}}
     <br/>
-    <br/>
-    Result{{data.result}}
-    <br/>
+    <p *ngIf="data.errorTable.length!=0">Review:</p>
+    <div *ngFor="let errorData of data.errorTable">
+      Table of {{errorData.num}}
+    </div>
     <button mat-raised-button  [style.background-color]="data.color" (click)="close()">Close</button>
-  </p>
 </div>
 
 

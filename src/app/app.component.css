@@ -4,74 +4,75 @@
   margin-bottom: 2%;
 }
 .container {
-  min-height: 100%;
-  width: 100%;
+  min-height: 90%;
+  width: 90%;
 }
 
 
 .bcenter{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
 }
 
 .bleft{
-  top: 50%;
+  top: 40%;
   left: 40%;
 }
 
 .bleftsec{
-  top: 40%;
+  top: 30%;
   left: 60%;
 }
 
 .bleftthird{
-  top: 33%;
+  top: 23%;
   left: 55%;
 }
 
 .btop{
-  top: 40%;
+  top: 30%;
   left: 50%;
 }
 
 .btopsec{
-  top: 60%;
+  top: 50%;
   left: 60%;
 }
 
 
 .btopthird{
-  top: 33%;
+  top: 23%;
   left: 45%;
 }
 
 .bright{
-  top: 50%;
+  top: 40%;
   left: 60%;
 }
 
 .brightsec{
-  top: 40%;
+  top: 30%;
   left: 40%;
 }
 
 .brightthird{
-  top: 68%;
+  top: 58%;
   left: 55%;
 }
 
 .bbotom{
-  top: 60%;
+  top: 50%;
   left: 50%;
 }
 
 .bbottomsec{
-  top: 60%;
+  top: 50%;
   left: 40%;
 }
 
 .bbottomthird{
-  top: 68%;
+  top: 58%;
   left: 45%;
 }
+

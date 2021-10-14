@@ -2,3 +2,11 @@
   min-height: 100%;
   width: 100%;
 }
+
+span{
+  min-height: 40vh !important;
+  text-decoration: none;
+  font-size: 110%;
+  white-space: normal;
+}
+

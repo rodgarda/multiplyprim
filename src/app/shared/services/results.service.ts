@@ -9,7 +9,7 @@ export class ResultsService {
   private stateGame =new BehaviorSubject<boolean>(false);
   wrongAnswers:number;
   rightAnswers:number;
-
+  errorsOper:number[]=[];
 
   get detectChanges$(): Observable<boolean>{
     return this.detectChanges.asObservable();
@@ -22,7 +22,8 @@ export class ResultsService {
   resultCorret(){
     this.detectChanges.next(true)
   }
-  resultWrong(){
+  resultWrong(numeroOne,numberTwo){
+    this.errorsOper.push(numeroOne,numberTwo)
     this.detectChanges.next(false)
   }
   startGame(){
@@ -31,7 +32,6 @@ export class ResultsService {
   stopGame(){
     this.stateGame.next(false)
   }
-
 
   constructor() { }
 }

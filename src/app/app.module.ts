@@ -12,12 +12,14 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatRadioModule} from '@angular/material/radio';
 import {FormsModule } from '@angular/forms'
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ModalconfComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

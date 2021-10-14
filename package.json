@@ -1,6 +1,7 @@
 {
   "name": "multiprim",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "author": "David Rodríguez García @ellisensiado",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
