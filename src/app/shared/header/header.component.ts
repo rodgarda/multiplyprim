@@ -20,12 +20,10 @@ export class HeaderComponent implements OnInit , OnDestroy{
   @Output() timeLevelExceeded = new EventEmitter();
   @Input() levelAct;
   onTimeExceeded(fin) {
-    console.log("Evento");
     this.timeExceeded.emit(fin);
   }
 
   onTimeLevelExceeded(fin) {
-    console.log("Evento");
     this.timeLevelExceeded.emit(fin);
   }
   constructor(public _result:ResultsService  ) { }
@@ -45,7 +43,7 @@ export class HeaderComponent implements OnInit , OnDestroy{
       if(val==true){
         this.levelAct=1;
         this.totalTime=60;
-        this.resultTime=5;
+        this.resultTime=6;
         //Subject start a true
         this._result.rightAnswers=0;
         this._result.wrongAnswers=0;
@@ -58,12 +56,13 @@ export class HeaderComponent implements OnInit , OnDestroy{
   getResultTime(){
     this.intervalResult=setInterval( ()=>{
       this.resultTime=this.resultTime-1
-      if (this.resultTime==0){
+      if (this.totalTime==0){
+        clearInterval(this.intervalResult);
+        this.resultTime=0
+      }
+      else if (this.resultTime==0){
         this.onTimeExceeded(true)
-        this.resultTime=6 - this.levelAct;
-        if (this.totalTime==0){
-          clearInterval(this.intervalResult);
-        }
+        this.resultTime=7 - this.levelAct;
       }
     },1000);
   }
@@ -72,8 +71,8 @@ export class HeaderComponent implements OnInit , OnDestroy{
     this.Interval=setInterval( ()=>{
       this.totalTime=this.totalTime-1
       if (this.totalTime==0){
-        this.onTimeLevelExceeded(true)
         clearInterval(this.Interval);
+        this.onTimeLevelExceeded(true)
       }
     },1000);
   }

@@ -1,12 +1,11 @@
 <app-header [levelAct]="level" (timeExceeded)="setTimeExceed($event)" (timeLevelExceeded)="setTimeLevelExceed($event)"></app-header>
-  <div>
-   <div class="example-button-container bcenter">
+
+   <div class=" bcenter">
       <button mat-fab color="warn" aria-label="Example icon button with a home icon">
         {{numCenterFirst}} x {{numCenterSecond}}
       </button>
     </div>
-
-  <ngcontainer  *ngFor="let number of this.num; let item = index" class="example-button-container bcenter"
+  <ngcontainer  *ngFor="let number of this.num; let item = index" class=" bcenter"
     [ngClass]="this.styleA[item]"
     (click)="evalResult(this.num[item])"
     >
@@ -14,6 +13,7 @@
           {{this.num[item]}}
         </button>
     </ngcontainer>
+<app-footer></app-footer>
 
 
 

@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, Output } from '@angular/core';
 import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 @Component({
@@ -9,6 +9,7 @@ import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 export class ModalconfComponent implements OnInit {
   public level:number;
   type:string;
+
   constructor(  public _dialogRef: MatDialogRef<ModalconfComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 

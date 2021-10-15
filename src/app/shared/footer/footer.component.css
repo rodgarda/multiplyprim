@@ -1,0 +1,21 @@
+.footer {
+  bottom: 0;
+  position: fixed;
+  height: 5%;
+  width: 100%;
+}
+
+.toolbar {
+  bottom: 0;
+  position: fixed;
+  height: 5%;
+  width: 100%;
+  background-color: black;
+}
+
+
+.text {
+  text-align: center;
+  width: 100%;
+}
+
